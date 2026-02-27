@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
+/* ==========================================
+   CSS VARIABLES / DESIGN TOKENS
+   ========================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Background colors */
+  --background: #050510;
+  --background-elevated: #0a0a1a;
+  --background-secondary: #080818;
+
+  /* Text colors - WHITE */
+  --foreground: #ffffff;
+  --foreground-secondary: rgba(255, 255, 255, 0.85);
+  --foreground-muted: rgba(255, 255, 255, 0.6);
+  --foreground-dim: rgba(255, 255, 255, 0.4);
+  --foreground-faint: rgba(255, 255, 255, 0.2);
+
+  /* Accent colors */
+  --accent-cyan: #00f0ff;
+  --accent-purple: #b44aff;
+  --accent-pink: #ff2d8a;
+
+  /* Border colors */
+  --border: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
 }
+
+/* ==========================================
+   TAILWIND THEME INTEGRATION
+   ========================================== */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ==========================================
+   FORCE DARK MODE - IGNORE SYSTEM PREFERENCE
+   ========================================== */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #050510;
+    --foreground: #ffffff;
+    color-scheme: dark;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #050510;
+    --foreground: #ffffff;
+    color-scheme: dark;
   }
+}
+
+/* ==========================================
+   BASE STYLES
+   ========================================== */
+
+html {
+  color-scheme: dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================
+   ENSURE WHITE TEXT EVERYWHERE
+   ========================================== */
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+}
+
+/* Paragraphs - slightly muted for readability */
+p {
+  color: var(--foreground-muted);
+}
+
+/* Links */
+a {
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-cyan);
+}
+
+/* Labels and small text */
+label,
+small,
+.text-sm {
+  color: var(--foreground-muted);
+}
+
+/* Muted text utility */
+.text-muted {
+  color: var(--foreground-muted);
+}
+
+.text-dim {
+  color: var(--foreground-dim);
+}
+
+.text-faint {
+  color: var(--foreground-faint);
+}
+
+/* Force white text */
+.text-white {
+  color: #ffffff !important;
+}
+
+/* ==========================================
+   SELECTION STYLING
+   ========================================== */
+
+::selection {
+  background: rgba(0, 240, 255, 0.3);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgba(0, 240, 255, 0.3);
+  color: #ffffff;
 }
