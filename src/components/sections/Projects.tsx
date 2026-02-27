@@ -324,7 +324,7 @@ export default function Projects() {
                     className="text-center mt-12 sm:mt-16"
                 >
                     <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/Mikey-Here3"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 px-6 py-3 text-sm tracking-wider uppercase text-white/50 hover:text-white border border-white/10 hover:border-white/30 rounded-full transition-all duration-300 group"
