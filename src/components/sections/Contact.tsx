@@ -29,7 +29,7 @@ const CONTACT_METHODS = [
             </svg>
         ),
         label: 'Location',
-        value: 'San Francisco, CA',
+        value: 'Islamabad, Pakistan',
         href: '#',
         color: '#b44aff',
     },
