@@ -13,61 +13,73 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: 'project-1',
-    title: 'NEBULA OS',
-    subtitle: 'Operating System Concept',
+    id: 'stockpilot',
+    title: 'STOCKPILOT PRO',
+    subtitle: 'Inventory Management System',
     description:
-      'A futuristic operating system interface designed for the next generation of spatial computing. Features dynamic window management, 3D file navigation, and neural-responsive UI elements.',
-    tags: ['UI/UX', 'React', 'Three.js', 'WebGL'],
+      'A comprehensive inventory management platform for businesses to track stock availability, monitor low stock alerts, analyze revenue metrics, and streamline stock operations with real-time analytics dashboard.',
+    tags: ['Next.js', 'React', 'TailwindCSS', 'Analytics'],
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
     color: '#00f0ff',
-    image: '/projects/nebula.jpg',
-    link: '#',
+    link: 'https://stockpilot-pro.vercel.app/',
     year: '2025',
   },
   {
-    id: 'project-2',
-    title: 'SYNTH WAVE',
-    subtitle: 'Music Visualizer',
+    id: 'studyhouse-numl',
+    title: 'STUDYHOUSE NUML',
+    subtitle: 'Academic Resource Portal',
     description:
-      'Real-time audio-reactive 3D visualization engine. Transforms sound frequencies into mesmerizing geometric landscapes with custom shader effects and particle systems.',
-    tags: ['WebAudio', 'GLSL', 'Three.js', 'Creative'],
+      'An academic wireframe platform for NUML university students featuring past exam papers, previous year questions, midterm and end-term exam resources organized by courses and semesters.',
+    tags: ['Next.js', 'React', 'MongoDB', 'TailwindCSS'],
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
     color: '#b44aff',
-    image: '/projects/synth.jpg',
-    link: '#',
+    link: 'https://studyhouse-eight.vercel.app/',
     year: '2025',
   },
   {
-    id: 'project-3',
-    title: 'QUANTUM VAULT',
-    subtitle: 'Crypto Dashboard',
+    id: 'solevault',
+    title: 'SOLEVAULT',
+    subtitle: 'Premium Shoe Store',
     description:
-      'A premium cryptocurrency portfolio tracker with real-time 3D data visualization, predictive analytics, and an interface inspired by sci-fi command centers.',
-    tags: ['FinTech', 'D3.js', 'Next.js', 'API'],
+      'A premium multi-brand shoe e-commerce platform with advanced filtering, seamless checkout experience, user authentication, and a curated collection from top footwear brands worldwide.',
+    tags: ['Next.js', 'Stripe', 'Auth.js', 'PostgreSQL'],
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80',
     color: '#ff2d8a',
-    image: '/projects/quantum.jpg',
-    link: '#',
+    link: 'https://solevault-final.vercel.app/',
     year: '2024',
   },
   {
-    id: 'project-4',
-    title: 'HOLOGRAM AI',
-    subtitle: 'AI Assistant Interface',
+    id: 'studyhouse',
+    title: 'STUDYHOUSE',
+    subtitle: 'University Learning Platform',
     description:
-      'Conversational AI interface featuring holographic-style 3D avatars, spatial audio, and gesture recognition. Built for immersive human-computer interaction.',
-    tags: ['AI/ML', 'WebRTC', 'Three.js', 'Voice'],
-    color: '#3d5aff',
-    image: '/projects/hologram.jpg',
-    link: '#',
-    year: '2024',
+      'A comprehensive educational platform where students can access course notes, quizzes, important topics, past midterm and end-term exams across multiple universities and degrees. Features user uploads and community contributions.',
+    tags: ['Next.js', 'React', 'Auth.js', 'Cloud Storage'],
+    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80',
+    color: '#00ff88',
+    link: 'https://studyhouse.online/',
+    year: '2025',
+  },
+  {
+    id: 'studyhouse-platform',
+    title: 'STUDYHOUSE PLATFORM',
+    subtitle: 'Full-Stack Academic Resource System',
+    description:
+      'A full-stack academic resource repository for university students to upload, browse, preview and download past papers. Features role-based admin moderation, PDF preview, Cloudinary storage, JWT auth, ratings, bookmarks, and comments.',
+    tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Cloudinary'],
+    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80',
+    color: '#f5a623',
+    link: 'https://www.studyhouse.online/',
+    year: '2025',
   },
 ];
 
 // ===== NAVIGATION =====
 export const NAV_ITEMS = [
-  { label: 'Home', href: '#hero' },
-  { label: 'Work', href: '#projects' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home',    href: '#hero'     },
+  { label: 'Work',    href: '#projects' },
+  { label: 'About',   href: '#about'    },
+  { label: 'Contact', href: '#contact'  },
 ];
 
 // ===== SKILLS =====
@@ -84,8 +96,8 @@ export const SKILLS = [
 
 // ===== SOCIAL LINKS =====
 export const SOCIALS = [
-  { label: 'GitHub', href: 'https://github.com', icon: 'github' },
+  { label: 'GitHub',   href: 'https://github.com',   icon: 'github'   },
   { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' },
-  { label: 'Twitter', href: 'https://twitter.com', icon: 'twitter' },
+  { label: 'Twitter',  href: 'https://twitter.com',  icon: 'twitter'  },
   { label: 'Dribbble', href: 'https://dribbble.com', icon: 'dribbble' },
 ];
