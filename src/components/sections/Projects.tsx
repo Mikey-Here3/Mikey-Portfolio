@@ -16,6 +16,16 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
+      {
+        id: 'studyhouse-platform',
+        title: 'STUDYHOUSE PLATFORM',
+        subtitle: 'Full-Stack Academic Resource System',
+        description: 'A full-stack academic resource repository built for university students to upload, browse, preview and download past papers. Features role-based admin moderation, PDF preview, Cloudinary storage, JWT authentication, ratings, bookmarks, and comments.',
+        tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Cloudinary', 'Prisma', 'Railway'],
+        image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80',
+        color: '#f5a623',
+        link: 'https://www.studyhouse.online/',
+    },
     {
         id: 'stockpilot',
         title: 'STOCKPILOT PRO',
@@ -57,16 +67,7 @@ const PROJECTS: Project[] = [
         color: '#00ff88',
         link: 'https://studyhouse.online/',
     },
-    {
-        id: 'studyhouse-platform',
-        title: 'STUDYHOUSE PLATFORM',
-        subtitle: 'Full-Stack Academic Resource System',
-        description: 'A full-stack academic resource repository built for university students to upload, browse, preview and download past papers. Features role-based admin moderation, PDF preview, Cloudinary storage, JWT authentication, ratings, bookmarks, and comments.',
-        tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Cloudinary', 'Prisma', 'Railway'],
-        image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80',
-        color: '#f5a623',
-        link: 'https://www.studyhouse.online/',
-    },
+  
 ];
 
 // ==========================================
