@@ -47,16 +47,7 @@ const PROJECTS: Project[] = [
         color: '#ff2d8a',
         link: 'https://solevault-final.vercel.app/',
     },
-    {
-        id: 'studyhouse',
-        title: 'STUDYHOUSE',
-        subtitle: 'University Learning Platform',
-        description: 'A comprehensive educational platform where students can access course notes, quizzes, important topics, past midterm and end-term exams across multiple universities and degrees.',
-        tags: ['Next.js', 'React', 'Auth.js', 'Cloud Storage'],
-        image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80',
-        color: '#00ff88',
-        link: 'https://studyhouse.online/',
-    },
+  
     {
         id: 'studyhouse-platform',
         title: 'STUDYHOUSE PLATFORM',
