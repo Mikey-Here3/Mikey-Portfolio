@@ -2,7 +2,6 @@
 
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-
 interface Project {
     id: string;
     title: string;
@@ -26,17 +25,16 @@ const PROJECTS: Project[] = [
         color: '#00f0ff',
         link: 'https://stockpilot-pro.vercel.app/',
     },
-   {
-    id: 'studyhouse-numl',
-    title: 'STUDYHOUSE NUML',
-    subtitle: 'Academic Resource Portal',
-    description: 'An academic wireframe platform for NUML university students featuring past exam papers, previous year questions, midterm and end-term exam resources organized by courses and semesters.',
-    tags: ['Next.js', 'React', 'MongoDB', 'TailwindCSS'],
-    // ✅ Replace with this URL
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80',
-    color: '#b44aff',
-    link: 'https://studyhouse-eight.vercel.app/',
-},
+    {
+        id: 'studyhouse-numl',
+        title: 'STUDYHOUSE NUML',
+        subtitle: 'Academic Resource Portal',
+        description: 'An academic wireframe platform for NUML university students featuring past exam papers, previous year questions, midterm and end-term exam resources organized by courses and semesters.',
+        tags: ['Next.js', 'React', 'MongoDB', 'TailwindCSS'],
+        image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80',
+        color: '#b44aff',
+        link: 'https://studyhouse-eight.vercel.app/',
+    },
     {
         id: 'solevault',
         title: 'SOLEVAULT',
@@ -47,7 +45,6 @@ const PROJECTS: Project[] = [
         color: '#ff2d8a',
         link: 'https://solevault-final.vercel.app/',
     },
-  
     {
         id: 'studyhouse-platform',
         title: 'STUDYHOUSE PLATFORM',
@@ -57,6 +54,18 @@ const PROJECTS: Project[] = [
         image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80',
         color: '#f5a623',
         link: 'https://www.studyhouse.online/',
+    },
+
+    // 🚀 NEW PROJECT (HIGH VALUE ADD)
+    {
+        id: 'ecommerce-template',
+        title: 'NEXSTORE UI',
+        subtitle: 'Premium Ecommerce Frontend Template',
+        description: 'A high-converting, production-ready ecommerce frontend template built with Next.js and Tailwind CSS. Features modern UI/UX, mock API integration, advanced filtering, cart system, checkout flow, dark mode, and smooth animations—designed for developers and startups to launch faster.',
+        tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Mock API'],
+        image: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=80',
+        color: '#22c55e',
+        link: 'https://ecommerce-template-kohl.vercel.app/',
     },
 ];
 
